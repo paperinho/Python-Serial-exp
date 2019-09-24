@@ -1,3 +1,3 @@
 # Python Serial ports experiment
-Free experiment with Python code ti manage Serial Ports, to learn first and to create routine to re-use in other code project.
+Free experiments with Python code to manage Serial Ports, to learn first and to create routine to re-use in other code project as second target.
 by IW2NOY.

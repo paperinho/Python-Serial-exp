@@ -32,6 +32,23 @@ def serial_ports():
             pass
     return result
 
-
 if __name__ == '__main__':
     print(serial_ports())
+
+#import serial.tools.list_ports
+ports = serial.tools.list_ports.comports()
+
+print("")
+print("Another way...")
+print("")
+for port, desc, hwid in sorted(ports):
+        print("{}: {} [{}]".format(port, desc, hwid))
+
+print("")
+print("Another way...")
+print("")
+
+#import serial
+ports = serial.tools.list_ports.comports(include_links=False)
+for port in ports :
+    print(port.device)
